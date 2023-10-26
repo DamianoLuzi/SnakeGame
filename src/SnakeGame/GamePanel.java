@@ -1,14 +1,3 @@
-/*  
-    import java.awt.Graphics;
-    import javax.swing.JPanel;
-    import java.awt.event.ActionListener;
-    import java.awt.event.KeyEvent;
-    import java.awt.event.ActionEvent;
-    import java.awt.event.KeyEvent;
-    import java.awt.event.KeyAdapter;
-*/
-//import javax.swing.*;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
@@ -58,12 +47,6 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void draw(Graphics g){
         if(running){
-
-            /*for(int j=0; j<SCREEN_HEIGHT; j++) {
-               g.setColor(Color.white); 
-               g.drawLine(j*UNIT_SIZE, 0, j*UNIT_SIZE, SCREEN_HEIGHT);
-               g.drawLine( 0,j*UNIT_SIZE, SCREEN_HEIGHT, j*UNIT_SIZE);
-            }*/
             
             g.setColor(Color.red);
             g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
